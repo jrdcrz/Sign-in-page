@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    margin: 0px;
+    background-color: #f9f9fb;
+    font-family: sans-serif;
+}
+
+.rainCity{
+    display: flex;
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    --text-color: white;
+    --link-color: white;
+}
+
+.rainCity>img{
+    height: 110%;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: var(--text-color);
+    top: 19.1%;
+    height: 200px;
+    width: 38.2vw;
+    background-color: #00000060;
+}
+
+.title>p{
+    font-size: 100px;
+    font-weight: 600;
+}
+
+a{
+    color: var(--link-color);
+}
+
+.main{
+    --padding: 80px;
+    --link-color: rgb(102, 156, 170);
+    align-self: top;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.one {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.intro {
+        margin-top: 150px;
+        padding-left: var(--padding);
+        width: 47vw;
+        margin-bottom: 50px;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+form{
+    justify-self: center;
+}
+
+fieldset{
+    height: 35vh;
+    border: 0px;
+    padding-left: var(--padding);
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset>p{
+    margin-bottom: 10px;
+    opacity: 100%;
+}
+
+fieldset>*{
+    display: flex;
+    gap: 100px;
+}
+fieldset>*>*{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+input {
+    border:  2px solid gray;
+    border-radius: 5px;
+    height: 20px;
+    width: 250px;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+input:focus{
+    outline: none !important;
+    border: 2px solid #5388b3;
+}
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ee28ee;
+}
+
+input[type="submit"] {
+    margin-left:  var(--padding);
+    margin-top: calc(var(--padding)/2);
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    border: 0px;
+    background-color: #5388b3;
+    box-shadow: 4px 4px 8px 2px rgb(63, 59, 59);
+}
+
+.shadow {
+    height: 10px;
+    width: 59vw;
+    background-image: linear-gradient(rgb(180, 150 ,360), #ffff);
+}
+
+.login {
+    padding-left: var(--padding);
+}
+
+.login>p>a{
+    text-decoration: none;
+}
